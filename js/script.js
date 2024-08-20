@@ -116,43 +116,43 @@ function toggleFullScreen() {
 //   // other initialization code
 // });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+// document.addEventListener("DOMContentLoaded", function () {
+//   var mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-  function updateVideoSource() {
-    if (mediaQuery.matches) {
-      // document.getElementById("theme-toggle").checked = true;
-      // document.getElementById("theme-toggle-2").checked = true;
-      document.body.classList.remove("light-mode");
-      document.body.classList.add("dark-mode");
-      loadDarkThemeMedia();
-    } else {
-      // document.getElementById("theme-toggle").checked = false;
-      document.body.classList.remove("dark-mode");
-      document.body.classList.add("light-mode");
-      loadLightThemeMedia();
-    }
+//   function updateVideoSource() {
+//     if (mediaQuery.matches) {
+//       // document.getElementById("theme-toggle").checked = true;
+//       // document.getElementById("theme-toggle-2").checked = true;
+//       document.body.classList.remove("light-mode");
+//       document.body.classList.add("dark-mode");
+//       loadDarkThemeMedia();
+//     } else {
+//       // document.getElementById("theme-toggle").checked = false;
+//       document.body.classList.remove("dark-mode");
+//       document.body.classList.add("light-mode");
+//       loadLightThemeMedia();
+//     }
 
-    document.querySelectorAll(".videoExample").forEach(function (video) {
-      const theme = document.body.classList.contains("dark-mode")
-        ? "dark"
-        : "light";
-      const source =
-        theme === "dark"
-          ? video.getAttribute("data-dark-src")
-          : video.getAttribute("data-light-src");
-      if (video.src !== source) {
-        video.src = source;
-      }
-    });
-  }
+//     document.querySelectorAll(".videoExample").forEach(function (video) {
+//       const theme = document.body.classList.contains("dark-mode")
+//         ? "dark"
+//         : "light";
+//       const source =
+//         theme === "dark"
+//           ? video.getAttribute("data-dark-src")
+//           : video.getAttribute("data-light-src");
+//       if (video.src !== source) {
+//         video.src = source;
+//       }
+//     });
+//   }
 
-  // Update video source initially
-  updateVideoSource();
+//   // Update video source initially
+//   updateVideoSource();
 
-  // Add listener for changes in color scheme
-  mediaQuery.addEventListener("change", updateVideoSource);
-});
+//   // Add listener for changes in color scheme
+//   mediaQuery.addEventListener("change", updateVideoSource);
+// });
 
 // ["theme-toggle", "theme-toggle-2"].forEach(function (id) {
 //   document.getElementById(id).addEventListener("change", function () {
