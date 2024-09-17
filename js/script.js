@@ -40,7 +40,7 @@ function setDownloadLink() {
   ) {
     if (os === "Mac") {
       var downloadString =
-        "https://github.com/nuttyartist/plume-public/releases/latest/download/Plume.0.9.9.dmg";
+        "https://github.com/nuttyartist/notes/releases/download/v2.3.0/Notes.2.3.0.dmg";
       downloadAnchor1.href = downloadString;
       downloadAnchor2.href = downloadString;
       downloadButton1.innerText = "Download for macOS";
@@ -53,7 +53,7 @@ function setDownloadLink() {
         });
     } else if (os === "Windows") {
       var downloadString =
-        "https://github.com/nuttyartist/plume-public/releases/latest/download/PlumeSetup_0.9.9.exe";
+        "https://github.com/nuttyartist/notes/releases/download/v2.3.0/NotesSetup_2.3.0.exe";
       downloadAnchor1.href = downloadString;
       downloadAnchor2.href = downloadString;
       downloadButton1.innerText = "Download for Windows";
