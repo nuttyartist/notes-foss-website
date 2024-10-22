@@ -426,11 +426,11 @@ function closeMenu() {
   navMenu.style.zIndex = "-1";
 }
 
-document
-  .getElementById("pro-buy-button")
-  .addEventListener("click", function (e) {
-    e.preventDefault(); // Prevent any default action
-    alert(
-      "We currently have issues with payment processing. We apologize for the inconvenience. Please check again in a few days."
-    );
-  });
+// document
+//   .getElementById("pro-buy-button")
+//   .addEventListener("click", function (e) {
+//     e.preventDefault(); // Prevent any default action
+//     alert(
+//       "We currently have issues with payment processing. We apologize for the inconvenience. Please check again in a few days."
+//     );
+//   });
