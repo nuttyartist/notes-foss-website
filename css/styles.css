@@ -1612,6 +1612,13 @@ footer {
 
 /* Media query for screens smaller than 600px */
 @media only screen and (max-width: 600px) {
+  .support-badges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
   .section-header-2 {
     margin: 50px 3% 5px;
   }
