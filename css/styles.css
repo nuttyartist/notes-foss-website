@@ -1599,6 +1599,16 @@ footer {
   color: #333;
 }
 
+.outline-x {
+  /* fill: #ff5353; */
+  fill: black;
+  opacity: 0.7;
+  width: 20px !important;  /* Same as other icons */
+  height: 20px !important; /* Same as other icons */
+  min-width: 20px;        /* Prevent shrinking */
+  min-height: 20pxpx;       /* Prevent shrinking */
+}
+
 /* For screens larger than 600px but smaller than 1200px */
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
   .video-container {
