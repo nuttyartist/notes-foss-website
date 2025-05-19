@@ -1805,3 +1805,32 @@ footer {
     width: 15%;
   }
 }
+
+.purchase-button {
+  background-color: #eaeaea; /* Slightly lighter gray */
+  color: #444; /* Darker text for contrast */
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #d0d0d0; /* Subtle border */
+  padding: 18px; /* Match download button padding */
+  display: inline-flex; /* Changed to inline-flex for better alignment */
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Let height be determined by padding */
+  font-size: 15px; /* Match download button font size */
+  font-weight: 700; /* Match download button font weight */
+}
+
+.purchase-button:hover {
+  background-color: #d9d9d9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.purchase-button .price-tag {
+  background-color: rgba(0, 0, 0, 0.15); /* Darker background for better contrast */
+  padding: 0 8px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin-left: 10px;
+  color: #333; /* Darker text for better readability */
+}
