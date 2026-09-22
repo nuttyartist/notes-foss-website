@@ -272,6 +272,9 @@
               <button class="additional-download-button">x86-64</button>
             </a>
           </div>
+          <a class="linux-install-link" href="#linux-installation">
+            Linux installation instructions
+          </a>
         </div>
         <div class="download-os-item">
           <div class="download-item-content">
@@ -290,6 +293,94 @@
           </div>
         </div>
       </div>
+
+      <section
+        id="linux-installation"
+        class="linux-installation"
+        aria-labelledby="linux-installation-title"
+      >
+        <h2 id="linux-installation-title">Install Notes on Linux</h2>
+        <p>
+          Choose the instructions for your download below. You only need one
+          package format.
+        </p>
+        <p>
+          For a .deb, .rpm, or .AppImage, download the matching file above, then
+          open Terminal from your applications menu. If you saved the file in
+          Downloads, run this command first:
+        </p>
+        <pre><code>cd ~/Downloads</code></pre>
+        <p>
+          If you saved it elsewhere, use that folder's path instead. Run the
+          commands for your package one line at a time, pressing Enter after each
+          line. If prompted, enter your administrator password (no characters
+          appear while you type) and confirm the installation.
+        </p>
+
+        <!-- Keep these filenames in sync with the download links above. -->
+        <details>
+          <summary>Ubuntu 23.10 (.deb)</summary>
+          <p>Install the downloaded Ubuntu package:</p>
+          <pre><code>sudo apt install ./notes_2.3.1_amd64-qt6-ubuntu-mantic.deb</code></pre>
+          <p>When installation finishes, open Notes from your applications menu.</p>
+        </details>
+
+        <details>
+          <summary>Fedora 38+ (.rpm)</summary>
+          <p>Install the downloaded Fedora package:</p>
+          <pre><code>sudo dnf install ./notes-2.3.1-1.x86_64-qt6-fedora-38.rpm</code></pre>
+          <p>When installation finishes, open Notes from your applications menu.</p>
+        </details>
+
+        <details>
+          <summary>openSUSE 15.5+ (.rpm)</summary>
+          <p>Install the downloaded openSUSE package:</p>
+          <pre><code>sudo zypper install --allow-unsigned-rpm ./notes-2.3.1-1.x86_64-qt6-opensuse-leap-15.5.rpm</code></pre>
+          <p>
+            The <code>--allow-unsigned-rpm</code> option allows this unsigned
+            package to be installed. Use it with the Notes download linked above.
+            When installation finishes, open Notes from your applications menu.
+          </p>
+        </details>
+
+        <details>
+          <summary>AppImage (Qt 6 or Qt 5)</summary>
+          <p>
+            An AppImage runs without installation. Make the file executable, then
+            launch it using the commands for the version you downloaded.
+          </p>
+          <h3>Qt 6</h3>
+          <pre><code>chmod +x ./Notes_2.3.1-Qt6.4.3-x86_64.AppImage
+./Notes_2.3.1-Qt6.4.3-x86_64.AppImage</code></pre>
+          <h3>Qt 5</h3>
+          <pre><code>chmod +x ./Notes_2.3.1-Qt5.15.2-x86_64.AppImage
+./Notes_2.3.1-Qt5.15.2-x86_64.AppImage</code></pre>
+          <p>After this, you can double-click the AppImage to open Notes again.</p>
+        </details>
+
+        <details>
+          <summary>Flatpak (Flathub)</summary>
+          <p>
+            Follow the <a href="https://flathub.org/setup">Flathub setup guide</a>
+            for your distribution first. Then open Terminal and run:
+          </p>
+          <pre><code>flatpak install flathub io.github.nuttyartist.notes</code></pre>
+          <p>Open Notes from your applications menu, or run:</p>
+          <pre><code>flatpak run io.github.nuttyartist.notes</code></pre>
+        </details>
+
+        <details>
+          <summary>Snap (Snap Store)</summary>
+          <p>
+            If Snap is not installed, follow the
+            <a href="https://snapcraft.io/docs/installing-snapd">Snap setup guide</a>
+            for your distribution first. Then open Terminal and run:
+          </p>
+          <pre><code>sudo snap install notes</code></pre>
+          <p>Open Notes from your applications menu, or run:</p>
+          <pre><code>snap run notes</code></pre>
+        </details>
+      </section>
 
       <footer>
         <div class="footer-container">

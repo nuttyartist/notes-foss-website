@@ -1514,6 +1514,57 @@ footer {
   transform: scale(0.95);
 }
 
+.linux-install-link {
+  margin-top: 0.5rem;
+  color: inherit;
+  font-size: 14px;
+  text-align: center;
+}
+
+.linux-installation {
+  max-width: 760px;
+  margin: 3rem auto 0;
+  padding: 0 1.5rem;
+  line-height: 1.6;
+  scroll-margin-top: 1rem;
+}
+
+.linux-installation details {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #909395;
+  border-radius: 8px;
+}
+
+.linux-installation summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.linux-install-link:focus-visible,
+.linux-installation summary:focus-visible,
+.linux-installation a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.linux-installation a {
+  color: inherit;
+}
+
+.linux-installation pre {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: rgba(128, 128, 128, 0.12);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.linux-installation code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.9em;
+}
+
 .os-notes {
   text-align: center;
   font-size: 12px;
